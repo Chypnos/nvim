@@ -105,4 +105,7 @@ return {
 			desc = "[/] Live grep the current buffer",
 		},
 	},
+	config = function()
+		require("fzf-lua").setup()
+	end,
 }
