@@ -49,7 +49,7 @@ return {
 			desc = "[F]ind [K]eymaps",
 		},
 		{
-			"<leader>fb",
+			"<leader>fB",
 			function()
 				require("fzf-lua").builtin()
 			end,
