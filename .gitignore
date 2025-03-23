@@ -1,0 +1,32 @@
+# Ignore Lua bytecode files
+*.luac
+
+# Ignore Neovim swap files
+*.swp
+*.swo
+
+# Ignore Neovim backup files
+*.bak
+*.tmp
+
+# Ignore session files
+Session.vim
+
+# Ignore Undo files
+*.un~
+
+# Ignore plugin installation directories (if using Packer, Lazy, etc.)
+site/
+plugin/
+lua/plugs/
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+.cache/
+
+# Ignore compiled or generated files
+*.out
+
+lazy-lock.json
