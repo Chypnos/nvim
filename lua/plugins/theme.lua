@@ -26,7 +26,7 @@ return {
 			},
 			overrides = function(colors) -- add/modify highlights
 				local theme = colors.theme
-				local accent = "#E7CC59"
+				local accent = "#ffa500"
 				local primary = "#bbbbbb"
 				local muted = "#555555"
 				local selection = "#101010"
@@ -58,6 +58,7 @@ return {
 					Visual = { fg = accent, bg = selection, underline = false },
 					SignColumn = { fg = muted },
 					CursorLine = { bg = selection, blend = 10 },
+					Cursor = { fg = primary, bg = accent },
 
 					-- Diagnostic Signs
 					DiagnosticSignError = { fg = accent },
