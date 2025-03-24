@@ -5,15 +5,15 @@ return {
 	-- or if using mini.icons/mini.nvim
 	-- dependencies = { "echasnovski/mini.icons" },
 	opts = {
-
 		fzf_colors = true,
 		files = {
-			fd_opts = [[--type f --hidden --exclude .git --exclude .ccls-cache]],
+			fd_opts = [[--type f --hidden --exclude .git --exclude .ccls-cache --exclude node_modules]],
 		},
 		grep = {
-			rg_opts = [[--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*"]],
+			rg_opts = [[--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*" --glob "!node_modules/*"]],
 		},
 	},
+
 	keys = {
 		{
 			"<leader>ff",
