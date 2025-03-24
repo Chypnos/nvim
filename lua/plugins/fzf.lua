@@ -6,12 +6,6 @@ return {
 	-- dependencies = { "echasnovski/mini.icons" },
 	opts = {
 		fzf_colors = true,
-		files = {
-			fd_opts = [[--type f --hidden --exclude .git --exclude .ccls-cache --exclude node_modules]],
-		},
-		grep = {
-			rg_opts = [[--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*" --glob "!node_modules/*"]],
-		},
 	},
 
 	keys = {
@@ -115,6 +109,13 @@ return {
 		},
 	},
 	config = function()
-		require("fzf-lua").setup()
+		require("fzf-lua").setup({
+			files = {
+				fd_opts = "--type f --hidden --exclude .git --exclude .ccls-cache --exclude node_modules",
+			},
+			grep = {
+				rg_opts = '--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*" --glob "!node_modules/**"',
+			},
+		})
 	end,
 }
