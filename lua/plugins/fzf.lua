@@ -4,7 +4,16 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	-- or if using mini.icons/mini.nvim
 	-- dependencies = { "echasnovski/mini.icons" },
-	opts = { { fzf_colors = true } },
+	opts = {
+
+		fzf_colors = true,
+		files = {
+			fd_opts = [[--type f --hidden --exclude .git --exclude .ccls-cache]],
+		},
+		grep = {
+			rg_opts = [[--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*"]],
+		},
+	},
 	keys = {
 		{
 			"<leader>ff",

@@ -38,4 +38,4 @@ require("lazy").setup({
 	checker = { enabled = true },
 })
 
-require("config/keymaps")
+require("config.keymaps")
