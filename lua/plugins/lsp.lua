@@ -207,13 +207,24 @@ return {
 			clangd = {
 				cmd = {
 					"clangd",
-					"--compile-commands-dir=" .. vim.fn.expand("%:p:h"), -- Use the current file's directory
 				},
-				settings = {
-					clangd = {
-						extraArgs = { "-I" .. vim.fn.expand("%:p:h") .. "/include" },
-					},
-				},
+				on_new_config = function(new_config, root_dir)
+					local project_root = vim.fn.getcwd()
+					local include_dir = project_root .. "/include"
+
+					if not new_config.settings then
+						new_config.settings = {}
+					end
+					if not new_config.settings.clangd then
+						new_config.settings.clangd = {}
+					end
+					if not new_config.settings.clangd.extraArgs then
+						new_config.settings.clangd.extraArgs = {}
+					end
+
+					-- Add include paths manually
+					vim.list_extend(new_config.settings.clangd.extraArgs, { "-I" .. include_dir })
+				end,
 			},
 			gopls = {},
 			pyright = {},
