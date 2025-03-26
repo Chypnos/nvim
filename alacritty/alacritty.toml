@@ -1,0 +1,63 @@
+[font.glyph_offset]
+y = 0
+x = 0
+
+[font.normal]
+family = "JetBrainsMonoNL NFM"
+style = "Light"
+
+[font.bold]
+family = "JetBrainsMono NF"
+style = "Light"
+
+[font.offset]
+y = 2
+x = 0
+ 
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 16
+builtin_box_drawing = false
+
+[scrolling]
+history = 2000
+
+[window]
+blur = false
+opacity = 0.8
+startup_mode = "Maximized"
+title = "Terminal"
+dynamic_title = false
+decorations = "None"
+
+[window.padding]
+x = 10
+y = 10
+
+[colors.primary]
+background = "0x1c1c1c"
+foreground = "0xe2e2e3"  
+
+[colors.normal]
+black = "0x181819"
+red = "0xfc5d7c"
+green = "0x9ed072"
+yellow = "0xe7c664"
+blue = "0x76cce0"
+magenta = "0xb39df3"
+cyan = "0xf39660"
+white = "0xe2e2e3"
+
+[colors.bright]
+black = "0x7f8490"
+red = "0xfc5d7c"
+green = "0x9ed072"
+yellow = "0xe7c664"
+blue = "0x76cce0"
+magenta = "0xb39df3"
+cyan = "0xf39660"
+white = "0xe2e2e3"
+
+
