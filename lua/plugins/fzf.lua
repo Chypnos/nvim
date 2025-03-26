@@ -111,7 +111,7 @@ return {
 	config = function()
 		require("fzf-lua").setup({
 			files = {
-				fd_opts = "--type f --hidden --exclude .git --exclude .ccls-cache --exclude node_modules",
+				fd_opts = "--type f --hidden --exclude .git --exclude .ccls-cache --exclude node_modules --exclude venv",
 			},
 			grep = {
 				rg_opts = '--hidden --no-ignore --glob "!.git/*" --glob "!.ccls-cache/*" --glob "!node_modules/**"',
