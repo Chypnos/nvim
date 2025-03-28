@@ -1,3 +1,16 @@
-## NeoVim config
+### Simple nvim config for programming
 
-# Simple nvim config
+
+This is a simple Neovim configuration for programming. It includes basic settings, key mappings, and plugins to enhance the development experience.
+
+
+
+
+
+
+
+
+
+
+
+
